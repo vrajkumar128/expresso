@@ -4,6 +4,10 @@ const app = express();
 // Set port that server listens on
 const PORT = process.env.PORT || 4000;
 
+// Import and use CORS middleware
+const cors = require('cors');
+app.use(cors());
+
 // Import and use body parsing middleware
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());

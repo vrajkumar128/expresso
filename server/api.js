@@ -3,12 +3,12 @@ const express = require('express');
 // Create apiRouter
 const apiRouter = express.Router();
 
-// // Import and mount artistsRouter
-// const artistsRouter = require('./artists');
-// apiRouter.use('/artists', artistsRouter);
+// Import and mount employeesRouter
+const employeesRouter = require('./employees');
+apiRouter.use('/employees', employeesRouter);
 
-// // Import and mount seriesRouter
-// const seriesRouter = require('./series');
-// apiRouter.use('/series', seriesRouter);
+// Import and mount menusRouter
+const menusRouter = require('./menus');
+apiRouter.use('/menus', menusRouter);
 
 module.exports = apiRouter;
